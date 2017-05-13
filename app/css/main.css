@@ -60,6 +60,9 @@ table {
       -ms-flex-align: center;
           align-items: center; }
 
+.app {
+  outline: 1px solid black; }
+
 .header-app {
   width: 85%;
   display: -webkit-box;
@@ -105,10 +108,10 @@ table {
     content: "";
     display: block;
     position: absolute;
-    width: 110%;
+    width: 120%;
     height: 100%;
     top: 0;
-    left: -10%;
+    left: -20%;
     background: #fffbc8;
     border: 1px solid #cecabf;
     border-radius: 10px;
@@ -295,6 +298,12 @@ table {
   font-weight: bold;
   color: #333333;
   box-sizing: border-box; }
+  .reviews-form__submit-button:hover {
+    cursor: pointer;
+    opacity: 0.9; }
+
+button[disabled] {
+  background: tomato; }
 
 @media screen and (max-width: 550px) {
   .consultant-reviews-header {
@@ -315,7 +324,7 @@ table {
         justify-content: space-around; }
 
   .consultant-reviews-header__title {
-    margin-left: 2px; }
+    margin-left: 6px; }
 
   .consultant-reviews-header-buttons {
-    margin-right: 2px; } }
+    margin-right: 6px; } }

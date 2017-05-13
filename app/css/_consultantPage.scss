@@ -7,6 +7,9 @@
   flex-flow: column nowrap;
   align-items: center;
 }
+.app {
+  outline: 1px solid black;
+}
 
 .header-app {
   width: 85%;
@@ -16,7 +19,6 @@
   padding: 20px 0;
 }
 .consultant-photo {
-  // width: 24%;
   position: relative;
   min-width: 120px;
 }
@@ -35,7 +37,7 @@
 .consultant-info__position {
   padding: 5px;
   font-size: 12px;
-  color: #808080;
+  color: $light_text_color;
 }
 .consultant-info__status {
   padding: 5px;
@@ -47,12 +49,12 @@
     content: "";
     display: block;
     position: absolute;
-    width: 110%;
+    width: 120%;
     height: 100%;
     top: 0;
-    left: -10%;
+    left: -20%;
     background: $status_bg;
-    border: 1px solid #cecabf;
+    border: 1px solid $comment_border_color;
     border-radius: 10px;
     z-index: -1;
   }
@@ -180,14 +182,14 @@
   display: inline-block;
   font-size: 12px;
   font-weight: normal;
-  color: #808080;
+  color: $light_text_color;
   margin-left: 5px;
 }
 .review-block__text {
   position: relative;
   padding: 15px;
   background-color: $comment_bg;
-  border: 1px solid #cecabf;
+  border: 1px solid $comment_border_color;
   font-size: 14px;
   &::before, &::after {
       content: '';
@@ -195,8 +197,8 @@
       top: -10px;
       left: 7%;
     	border: 5px solid transparent;
-      border-bottom: 5px solid #cecabf;
-      border-left: 5px solid #cecabf;
+      border-bottom: 5px solid $comment_border_color;
+      border-left: 5px solid $comment_border_color;
   }
   &::after {
     top: -8px;
@@ -235,8 +237,15 @@
   border-radius: 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #333333;
+  color: $font_color;
   box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+button[disabled] {
+  background: tomato;
 }
 
 
@@ -258,9 +267,9 @@
     }
 
     .consultant-reviews-header__title {
-      margin-left: 2px
+      margin-left: 6px
     }
     .consultant-reviews-header-buttons {
-      margin-right: 2px;
+      margin-right: 6px;
     }
 }
