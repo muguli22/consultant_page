@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consultant page</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <article class="app">
+      <header class="header-app">
+          <section class="consultant-photo">
+            <div class="consultant-photo__image"></div>
+          </section>
+          <section class="consultant-info">
+            <h1 class="consultant-info__name">Вериника Ростова</h1>
+            <p class="consultant-info__position">Менеджер по продажам</p>
+            <p class="consultant-info__status">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</p>
+          </section>
+        </header>
+      <section class="services-table">
+          <table>
+            <tr class="services-table__header-row">
+              <td></td>
+              <td class="services-table__header-data">Услуг</td>
+            </tr>
+            <tr class="services-table__body-row services-table__body-row-top_row">
+              <td class="services-table__name">Ручное бронирование</td>
+              <td class="services-table__count">11</td>
+            </tr>
+            <tr class="services-table__body-row">
+              <td class="services-table__name">Пакетные туры</td>
+              <td class="services-table__count">3</td>
+            </tr>
+            <tr class="services-table__body-row services-table__body-row-last_row">
+              <td class="services-table__name">Отели</td>
+              <td class="services-table__count">1</td>
+            </tr>
+            <tr class="services-table__footer">
+              <td class="services-table__footer-total">Всего</td>
+              <td class="services-table__footer-count">15</td>
+            </tr>
+          </table>
+        </section>
+      <section class="consultant-reviews">
+        <section class="consultant-reviews-header">
+          <div class="consultant-reviews-header__title">Последние отзывы
+            <span><a href="#" class="reviews_link">Все отзывы</a></span>
+          </div>
+          <div class="consultant-reviews-header-buttons">
+            <span class="like_button consultant-reviews-header-buttons__button">131</span>
+            <span class="comments_button consultant-reviews-header-buttons__button">14</span>
+          </div>
+        </section>
+        <section id="root">
+          <!-- <section class="consultant-reviews__content">
+            <div class="review-block">
+              <div class="review-block__author">Самуил
+                <span class="review-block__date">13 октября 2011</span>
+              </div>
+              <div class="review-block__text">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</div>
+            </div>
+            <div class="review-block">
+              <div class="review-block__author">Лилия Семёновна
+                <span class="review-block__date">14 октября 2011</span>
+              </div>
+              <div class="review-block__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                 стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и
+                 торговли бриллиантами?
+               </div>
+            </div>
+            <div class="review-block">
+              <div class="review-block__author">Лилия Семёновна
+                <span class="review-block__date">14 октября 2011</span>
+              </div>
+              <div class="review-block__text">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно
+                 стабилизирует кинетический момент?
+               </div>
+            </div>
+          </section> -->
+        </section>
+        <section class="consultant-reviews__form">
+          <form action="" class="reviews-form">
+            <p class="reviews-form__textarea-block">
+              <textarea name="question" class="reviews-form__textarea"></textarea>
+            </p>
+            <p class="reviews-form__submit-block">
+              <button class="reviews-form__submit-button">Написать консультанту</button>
+            </p>
+          </form>
+        </section>
+      </section>
+      <div id="root"></div>
+    </article>
+  <script src="js/react/react.js"></script>
+  <script src="js/react/react-dom.js"></script>
+  <script src="js/react/babel.js"></script>
+  <script type="text/babel" src="js/app.js"></script>
+</body>
+</html>

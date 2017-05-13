@@ -1,0 +1,266 @@
+.app,
+.consultant-reviews,
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.header-app {
+  width: 85%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+.consultant-photo {
+  // width: 24%;
+  position: relative;
+  min-width: 120px;
+}
+.consultant-photo__image {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    background: url("../images/profile_photo.jpg") -76px -22px no-repeat;
+    border-radius: 50%;
+}
+.consultant-info__name {
+  padding: 5px;
+  font-weight: bold;
+  color: $font_color;
+}
+.consultant-info__position {
+  padding: 5px;
+  font-size: 12px;
+  color: #808080;
+}
+.consultant-info__status {
+  padding: 5px;
+  font-size: 14px;
+  position: relative;
+  line-height: 1.4;
+  margin-top: 2px;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    background: $status_bg;
+    border: 1px solid #cecabf;
+    border-radius: 10px;
+    z-index: -1;
+  }
+}
+
+.services-table {
+  align-self: flex-end;
+  margin-right: 85px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.services-table__header-data {
+  padding-bottom: 15px;
+}
+.services-table__header-row {
+  border-bottom: 1px solid #cccccc;
+}
+.services-table__footer {
+  border-top: 1px solid #cccccc;
+  font-size: 16px;
+  font-weight: bold;
+}
+.services-table__footer-total {
+  padding-top: 15px;
+}
+.services-table__footer-count {
+  text-align: right;
+}
+.services-table__name {
+  position: relative;
+  width: 266px;
+  padding: 5px;
+  margin: 2px 0;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: $blue;
+    width: 20%;
+    height: 100%;
+    top: 1px;
+    left: 1px;
+    z-index: -1;
+    border-left: 1px solid $blue_border;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+}
+.services-table__count {
+  text-align: right;
+}
+.services-table__body-row {
+  border-bottom: 2px solid white;
+  td {
+    vertical-align: middle;
+    padding: 7px 5px;
+  }
+}
+.services-table__body-row-top_row{
+  .services-table__name:after {
+    width: 85%;
+    height: 80%;
+    top: 20%;
+    background: $green;
+    border-left: 1px solid $green_border;
+  }
+   td {
+    padding-top: 14px;
+  }
+}
+.services-table__body-row-last_row {
+  border-bottom: none;
+  td {
+    padding-bottom: 14px;
+  }
+  .services-table__name:after {
+    width: 12%;
+    height: 80%;
+  }
+}
+
+.consultant-reviews-header {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.consultant-reviews-header__title {
+  margin-left: 10px;
+  font-weight: bold;
+}
+.reviews_link {
+  font-size: 14px;
+  margin-left: 14px;
+  font-weight: normal;
+}
+.consultant-reviews-header-buttons__button {
+  display: inline-block;
+  padding-left: 15px;
+}
+.consultant-reviews-header-buttons {
+  font-size: 14px;
+  margin-right: 15px;
+}
+.like_button {
+  background: url('../images/like_icon.png') 0 0 no-repeat;
+}
+.comments_button {
+  background: url('../images/comment_icon.png') 0 1px no-repeat;
+  margin-left: 10px;
+}
+.consultant-reviews__content {
+  width: 95%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.review-block__author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+.review-block__date {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #808080;
+  margin-left: 5px;
+}
+.review-block__text {
+  position: relative;
+  padding: 15px;
+  background-color: $comment_bg;
+  border: 1px solid #cecabf;
+  font-size: 14px;
+  &::before, &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 7%;
+    	border: 5px solid transparent;
+      border-bottom: 5px solid #cecabf;
+      border-left: 5px solid #cecabf;
+  }
+  &::after {
+    top: -8px;
+    left: 7.2%;
+    border-bottom: 5px solid $comment_bg;
+    border-left: 5px solid $comment_bg;
+  }
+}
+.review-block {
+  padding: 10px 0;
+}
+.consultant-reviews__form {
+  width: 100%;
+  background: $form_bg;
+}
+.reviews-form {
+  width: 90%;
+  margin: 30px auto;
+}
+.reviews-form__textarea {
+  width: 99%;
+  height: 60px;
+  resize: vertical;
+}
+.reviews-form__textarea-block {
+  margin-bottom: 15px;
+}
+.reviews-form__submit-block {
+  text-align: center;
+}
+.reviews-form__submit-button {
+  width: 70%;
+  height: 42px;
+  background: $button_bg;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .consultant-reviews-header {
+      width: 99%;
+    }
+    .services-table {
+      align-self: center;
+      margin-right: 0;
+    }
+    .consultant-info {
+      width: 70%;
+    }
+    .header_app {
+      width: 90%;
+      justify-content: space-around;
+    }
+
+    .consultant-reviews-header__title {
+      margin-left: 2px
+    }
+    .consultant-reviews-header-buttons {
+      margin-right: 2px;
+    }
+}

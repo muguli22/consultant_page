@@ -1,0 +1,321 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  color: #333333; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.app,
+.consultant-reviews,
+#root {
+  max-width: 720px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.header-app {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0; }
+
+.consultant-photo {
+  position: relative;
+  min-width: 120px; }
+
+.consultant-photo__image {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background: url("../images/profile_photo.jpg") -76px -22px no-repeat;
+  border-radius: 50%; }
+
+.consultant-info__name {
+  padding: 5px;
+  font-weight: bold;
+  color: #333333; }
+
+.consultant-info__position {
+  padding: 5px;
+  font-size: 12px;
+  color: #808080; }
+
+.consultant-info__status {
+  padding: 5px;
+  font-size: 14px;
+  position: relative;
+  line-height: 1.4;
+  margin-top: 2px; }
+  .consultant-info__status:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 110%;
+    height: 100%;
+    top: 0;
+    left: -10%;
+    background: #fffbc8;
+    border: 1px solid #cecabf;
+    border-radius: 10px;
+    z-index: -1; }
+
+.services-table {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 85px;
+  margin-bottom: 15px;
+  font-size: 14px; }
+
+.services-table__header-data {
+  padding-bottom: 15px; }
+
+.services-table__header-row {
+  border-bottom: 1px solid #cccccc; }
+
+.services-table__footer {
+  border-top: 1px solid #cccccc;
+  font-size: 16px;
+  font-weight: bold; }
+
+.services-table__footer-total {
+  padding-top: 15px; }
+
+.services-table__footer-count {
+  text-align: right; }
+
+.services-table__name {
+  position: relative;
+  width: 266px;
+  padding: 5px;
+  margin: 2px 0; }
+  .services-table__name:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ace2f8;
+    width: 20%;
+    height: 100%;
+    top: 1px;
+    left: 1px;
+    z-index: -1;
+    border-left: 1px solid #7eb4ca;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+.services-table__count {
+  text-align: right; }
+
+.services-table__body-row {
+  border-bottom: 2px solid white; }
+  .services-table__body-row td {
+    vertical-align: middle;
+    padding: 7px 5px; }
+
+.services-table__body-row-top_row .services-table__name:after {
+  width: 85%;
+  height: 80%;
+  top: 20%;
+  background: #b1e19b;
+  border-left: 1px solid #83b26d; }
+.services-table__body-row-top_row td {
+  padding-top: 14px; }
+
+.services-table__body-row-last_row {
+  border-bottom: none; }
+  .services-table__body-row-last_row td {
+    padding-bottom: 14px; }
+  .services-table__body-row-last_row .services-table__name:after {
+    width: 12%;
+    height: 80%; }
+
+.consultant-reviews-header {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px 0; }
+
+.consultant-reviews-header__title {
+  margin-left: 10px;
+  font-weight: bold; }
+
+.reviews_link {
+  font-size: 14px;
+  margin-left: 14px;
+  font-weight: normal; }
+
+.consultant-reviews-header-buttons__button {
+  display: inline-block;
+  padding-left: 15px; }
+
+.consultant-reviews-header-buttons {
+  font-size: 14px;
+  margin-right: 15px; }
+
+.like_button {
+  background: url("../images/like_icon.png") 0 0 no-repeat; }
+
+.comments_button {
+  background: url("../images/comment_icon.png") 0 1px no-repeat;
+  margin-left: 10px; }
+
+.consultant-reviews__content {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap; }
+
+.review-block__author {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 12px; }
+
+.review-block__date {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+  color: #808080;
+  margin-left: 5px; }
+
+.review-block__text {
+  position: relative;
+  padding: 15px;
+  background-color: #f2fbff;
+  border: 1px solid #cecabf;
+  font-size: 14px; }
+  .review-block__text::before, .review-block__text::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 7%;
+    border: 5px solid transparent;
+    border-bottom: 5px solid #cecabf;
+    border-left: 5px solid #cecabf; }
+  .review-block__text::after {
+    top: -8px;
+    left: 7.2%;
+    border-bottom: 5px solid #f2fbff;
+    border-left: 5px solid #f2fbff; }
+
+.review-block {
+  padding: 10px 0; }
+
+.consultant-reviews__form {
+  width: 100%;
+  background: #f2f2f2; }
+
+.reviews-form {
+  width: 90%;
+  margin: 30px auto; }
+
+.reviews-form__textarea {
+  width: 99%;
+  height: 60px;
+  resize: vertical; }
+
+.reviews-form__textarea-block {
+  margin-bottom: 15px; }
+
+.reviews-form__submit-block {
+  text-align: center; }
+
+.reviews-form__submit-button {
+  width: 70%;
+  height: 42px;
+  background: #fdd639;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  box-sizing: border-box; }
+
+@media screen and (max-width: 550px) {
+  .consultant-reviews-header {
+    width: 99%; }
+
+  .services-table {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 0; }
+
+  .consultant-info {
+    width: 70%; }
+
+  .header_app {
+    width: 90%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+  .consultant-reviews-header__title {
+    margin-left: 2px; }
+
+  .consultant-reviews-header-buttons {
+    margin-right: 2px; } }

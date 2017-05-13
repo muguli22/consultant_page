@@ -1,0 +1,14 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React",
+  "main": "index.html",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Misha Baturin",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2"
+  }
+}
